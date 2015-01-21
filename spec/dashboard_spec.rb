@@ -8,7 +8,7 @@ describe Dashboard do
       expect(Post).to receive(:today).and_return(posts_published_today)
       dashboard = Dashboard.new(posts: Post.all)
 
-      result = dashboard.posts
+      expect(dashboard.posts).to eq posts_published_today
     end
   end
 
