@@ -5,7 +5,7 @@ class Dashboard
     @posts = posts
   end
 
-  def posts
+  def todays_posts
     @posts.today
   end
 end
