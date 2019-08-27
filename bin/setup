@@ -8,7 +8,7 @@ set -e
 
 # Set up Ruby dependencies via Bundler
 if ! command -v bundle > /dev/null; then
-  gem install bundler --no-document --pre
+  gem install bundler --no-document -v "~>1.0"
 fi
 
 bundle install
