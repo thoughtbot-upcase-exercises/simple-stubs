@@ -20,8 +20,8 @@ GEM
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
     diff-lcs (1.4.4)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     minitest (5.14.4)
@@ -51,7 +51,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   database_cleaner
-  factory_girl
+  factory_bot
   rake
   rspec
   sqlite3
