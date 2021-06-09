@@ -13,7 +13,7 @@ ActiveRecord::Base.establish_connection(
   database: File.join(PROJECT_ROOT, "test.db")
 )
 
-class CreateSchema < ActiveRecord::Migration
+class CreateSchema < ActiveRecord::Migration[4.2]
   def self.up
     create_table :posts, force: true do |table|
       table.string :title
