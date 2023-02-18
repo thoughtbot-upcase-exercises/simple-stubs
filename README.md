@@ -72,7 +72,7 @@ Using the `double` and `allow` methods, you can create simple stubs.
 
 In this exercise, you'll use simple stubs to clean up some tests.
 
-If you'd like to see a quick intro to test doubles, check out the related episode of [the Weekly Iteration](https://upcase.com/videos/stubs-mocks-spies-and-fakes).
+If you'd like to see a quick intro to test doubles, check out the related episode of [the Weekly Iteration](https://thoughtbot.com/upcase/videos/stubs-mocks-spies-and-fakes).
 
 ## Instructions
 
@@ -88,7 +88,7 @@ After running `bin/setup`, edit `spec/dashboard_spec.rb` and look for test logic
 
 Useful links:
 
-- Check out our Weekly Iteration episode on [Stubs, Mocks, Spies, and Fakes](https://upcase.com/videos/stubs-mocks-spies-and-fakes) (specifically the first few minutes on `double` and method stubbing).
+- Check out our Weekly Iteration episode on [Stubs, Mocks, Spies, and Fakes](https://thoughtbot.com/upcase/videos/stubs-mocks-spies-and-fakes) (specifically the first few minutes on `double` and method stubbing).
 - Check out the rspec-mocks guides to [test-doubles](https://github.com/rspec/rspec-mocks#test-doubles) and [method stubs](https://github.com/rspec/rspec-mocks#method-stubs)
 
 ## Featured Solution
