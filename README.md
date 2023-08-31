@@ -76,10 +76,15 @@ If you'd like to see a quick intro to test doubles, check out the related episod
 
 ## Instructions
 
-To start, you'll want to clone and run the setup script for the repo
+To start, you'll want to clone the repo
 
     git clone git@github.com:thoughtbot-upcase-exercises/simple-stubs.git
     cd simple-stubs
+    
+
+In the file `.ruby-version`, update the Ruby version according to the Ruby that runs on your machine, update the bundle, and then run the setup script for the repo.
+
+    bundle update
     bin/setup
 
 After running `bin/setup`, edit `spec/dashboard_spec.rb` and look for test logic which is duplicated from `spec/post_spec.rb`. Use `double` and `allow` to create a stub for posts and eliminate this duplication.
