@@ -1,7 +1,7 @@
 require "rspec"
 require "active_record"
 require "database_cleaner"
-require "factory_girl"
+require "factory_bot"
 require "timecop"
 
 PROJECT_ROOT = File.expand_path("../..", __FILE__)
@@ -13,7 +13,7 @@ ActiveRecord::Base.establish_connection(
   database: File.join(PROJECT_ROOT, "test.db")
 )
 
-class CreateSchema < ActiveRecord::Migration
+class CreateSchema < ActiveRecord::Migration[7.0]
   def self.up
     create_table :posts, force: true do |table|
       table.string :title
@@ -22,7 +22,7 @@ class CreateSchema < ActiveRecord::Migration
   end
 end
 
-FactoryGirl.define do
+FactoryBot.define do
   sequence(:title) { |n| "title#{n}text" }
 
   factory :post do
@@ -31,7 +31,7 @@ FactoryGirl.define do
 end
 
 RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   config.before(:suite) do
     CreateSchema.suppress_messages { CreateSchema.migrate(:up) }
